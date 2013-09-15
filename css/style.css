@@ -16,7 +16,7 @@ body{
 	position: absolute;
 	top: 0;
 	height: 100%;
-	width: 38%;
+	width: 550px;
 	right: 15%;
 	background-color: rgba(255,255,255,.8);
 }
@@ -34,17 +34,24 @@ h1 {
 	font-weight: bold;
 }
 
-a {
-	background-color: #17b1f9;
+.bio a {
+	background-color: #0071ce;
 	border-radius: 5px;
-	padding: 20px;
+	padding: 15px 40px;
 	text-decoration: none;
 	margin-left: 20px;
 	color: white;
+	font-size: 1.5em;
+}
+
+.bio a:hover {
+	background-color: #17b1f9;
 }
 
 .bio p {
 	padding: 10px 20px;
+	line-height: 20px;
+	letter-spacing: 1px;
 }
 .bio p:first-of-type{
 	margin-top: 40px;
@@ -56,4 +63,25 @@ a {
 	margin-top: 20px;
 }
 
+blockquote {
+	position: absolute;
+	top: 600px;
+	background-color: rgba(0,0,0,.3);
+	width: 100%;
+	text-align: center;
+	padding: 15px 0 ;
+	font-size: 1.5em;
+	color: rgba(70,70,70,1);
+	font-style: italic;	
+}
+
+@media screen and (max-width: 900px){
+	.bio {
+		width: 380px;
+	}
+}
+
+@media screen and (max-width: 480) {
+
+}
 
