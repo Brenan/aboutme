@@ -16,28 +16,34 @@ body{
 	position: absolute;
 	top: 0;
 	height: 100%;
-	width: 550px;
-	right: 15%;
+	width: 475px;
+	right: 25%;
 	background-color: rgba(255,255,255,.8);
 }
 
 h1 {
-	font-size: 5em;
+	font-size: 4.5em;
 	padding: 20px;
 	font-weight: bold;
 }
 
-.bio h2 {
+h2 {
 	font-size: 2em;
 	padding: 0 20px;
 	padding-bottom: 40px;
 	font-weight: bold;
 }
 
+h3 {
+	font-size: 1.5em;
+	padding: 20px;
+	font-weight: bold;
+}
+
 .bio a {
 	background-color: #0071ce;
 	border-radius: 5px;
-	padding: 15px 40px;
+	padding: 12px 40px;
 	text-decoration: none;
 	margin-left: 20px;
 	color: white;
@@ -75,13 +81,91 @@ blockquote {
 	font-style: italic;	
 }
 
+.projects {
+	position: absolute;
+	top: 36%;
+	height: 44%;
+	width: 225px;
+	right: 8%;
+	background-color: rgba(255,255,255,.8);
+}
+
+.projects a {
+	display: block;
+	padding-left: 20px;
+}
+
+h4 {
+	font-size: 1em;
+	padding: 20px;
+	font-weight: bold;
+	margin-top: -10px;
+}
+
 @media screen and (max-width: 900px){
 	.bio {
 		width: 380px;
 	}
+	h1 {
+		font-size: 3em;
+	}
+	blockquote {
+		top: 625px;
+	}
 }
 
 @media screen and (max-width: 480) {
+	#bigpicture {
+		background-image: url(../img/skatemobile.png);
+		background-size: 480px auto;
+		height: 225px;
+		background-repeat: no-repeat;	}
+	.bio {
+		position: relative;
+		width: 440;
+		margin: 0 auto;
+		top: 0;
+		right: 0;
+	}
+	.projects {
+		position: relative;
+		width: 225;
+		margin: auto;
+		top: 0;
+		right: 0;
 
+	}
+	h1{
+		font-size: 2em;
+	}
+	h2{
+		font-size: 1.5em;
+	}
+	h3{
+		font-size: 1em;
+	}
+}
+
+@media screen and (max-width: 320) {
+	#bigpicture {
+		background-image: url(../img/skatemobile.png);
+		background-size: 320px auto;
+		height: 225px;
+		background-repeat: no-repeat;	}
+	.bio {
+		position: relative;
+		width: 280;
+		margin: 0 auto;
+		top: 0;
+		right: 0;
+	}
+	.projects {
+		position: relative;
+		width: 225;
+		margin: auto;
+		top: 0;
+		right: 0;
+
+	}
 }
 
